@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random keyboard sounds</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../Data.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Random Keyboard Sounds</h1>
+    </header>
+
+    <main>
+        <span id="videoName"></span>
+        <div id="player"></div>
+        <button id="changeVideoBtn">Change Video</button>
+        <hr>
+        <h2>Choose your rating for the current video!</h2>
+        <form>
+            <label>
+              <input type="radio" name="rating" value="1">
+              1 Star
+            </label>
+            <label>
+              <input type="radio" name="rating" value="2">
+              2 Stars
+            </label>
+            <label>
+              <input type="radio" name="rating" value="3">
+              3 Stars
+            </label>
+            <label>
+                <input type="radio" name="rating" value="4">
+                4 Stars
+            </label>
+            <label>
+                <input type="radio" name="rating" value="5">
+                5 Stars
+            </label>
+        
+            <button type="button" id="submitBtn">Submit</button>
+          </form>
+          
+        <section id="rating-list"></section>
+
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
